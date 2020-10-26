@@ -6,7 +6,7 @@
   <title>{% PAGE_FULL_TITLE %}</title>
   <meta name="description" content="{% DESCRIPTION %}">
   <meta name="keywords" content="{% KEYWORDS %}">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="format-detection" content="telephone=no">
   <!-- {% SITE_FAVICON %} -->
   <link rel="canonical" href="{% PAGE_FULL_URL %}">
@@ -21,16 +21,21 @@
   {% NO_PAGE_OGP_IMAGE %}
   <meta property="og:image" content="{% SITE_URL %}user/media/THEME-NAME/common/ogp.png" />
   {% /NO_PAGE_OGP_IMAGE %}
-  <meta property="og:site_name" content="{% SITE_TITLE %}" /> -->
+  <meta property="og:site_name" content="{% SITE_TITLE %}" />
+  <meta name="twitter:card" content="summary_large_image" />
+-->
+
+
   <!-- ↑OGP↑ -->
   <link rel="stylesheet" href="user/theme/THEME-NAME/media/css/import.css">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"> -->
-  <!-- <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.2.43/css/materialdesignicons.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"> -->
   <!-- {% BLOCK NAME='ga' %} -->
 </head>
 
-<body>
+<body class="top">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.3/dist/viewport-extra.min.js"></script>
   <script src="user/theme/THEME-NAME/media/js/common.js"></script>
 
     <!-- Container -->
@@ -38,9 +43,15 @@
 
       <!-- Header -->
       <header>
+        
+        <div class="slidemenu-btn"></div>
       </header>
       <!-- /Header -->
 
+      <!-- Slide-menu -->
+      <div class="slide-menu"></div>
+      <!-- /Slide-menu -->
+      
       <!-- Main -->
       <div class="l-main">
 
